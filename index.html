@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta chatset='UTF-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sameer M Salman Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b829fd2ef7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+        <nav>
+            <img src="Images/whiteTextLogo.png" class="logo" width="400">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student at University of Houston</p>
+            <h1><span>Hey, I'm Sameer</span></h1> 
+        </div>
+</div>
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/IMG_9617.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Computer Science major with an Economics and Mathematics 
+                minor striving to secure a challenging intern position to fully utilize and improve my skills, 
+                while making an outstanding contribution to the company. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Project's</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>December 2022</span><br>Portfolio Website</li>
+                        <li><span>October 2022</span><br>CodeRED Odyssey: C++ Monopoly Project</li>
+                        <li><span>July 2022</span><br>C++ Tax Calculator</li>
+                        <li><span>May 2022</span><br>C++ Tamagotchi Project</li>
+                        <li><span>January 2022</span><br>NASA Johnson Space Center's Hackathon 2022: Map Homepage Website</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>May 2022 - Current</span><br>Kingwood Country Club - Banquet Server</li>
+                        <li><span>January 2021 - May 2021</span><br>Walgreens Pharmacy - Pharmacy Technician Trainee Internship</li>
+                        <li><span>July 2019 - February 2020</span><br>Randall’s - Cashier/Courtesy Clerk</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2021 - December 2023</span><br>University of Houston</li>
+                        <li><span>July 2019 - July 2021</span><br>Lone Star College System</li>
+                        <li><span>August 2017 - June 2021</span><br>Kingwood Park High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>C++</h2>
+                <p>Intermediate<br>Courses completed in C++ consist of Programming and Data Structures (COSC 2436) & 
+                Introduction to Programming (COSC 1437)</p>
+                <!--idk if i wanna keep this-->
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Intermediate<br>Courses completed in Python consist of Computer Science and Programming (COSC 1336)</p>
+                <!--idk if i wanna keep this-->
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>Intermediate<br>This website is the first HTML, CSS, and JavaScript project I have worked on myself. Along 
+                with the website I developed for the Johnson Space Center Hackathon.</p>
+                <!--idk if i wanna keep this-->
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/website main pic.jpeg" >
+                <div class="layer">
+                    <h3>Personal Portfolio Project</h3>
+                    <p>This website is a personal portfolio project I have created
+                        to keep track of all of my achivements and projects.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/monopoly main pic.jpeg" >
+                <div class="layer">
+                    <h3>C++ Monopoly</h3>
+                    <p>Won “Best Beginner Hack” award for first-time CodeRED Hackathon participants.
+                        Established a C++ monopoly game for more than 8 players with more than 20 different properties.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/map.jpeg">
+                <div class="layer">
+                    <h3>Homepage for NASA Hackathon Map</h3>
+                    <p>Created a website using HTML for the homepage of our project.
+                        Contributed to the development of a map of over 250 buildings that brings up a building’s infrastructure
+                        consisting of the build materials, date, and issues.
+                    </p>
+                    <a href="https://jsc-hackathon-website.boluade.repl.co"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sameersalman357@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(832) 445-4337</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sameer-salman/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Sameerios35"><i class="fa-brands fa-square-github"></i></a>
+    <!--                <a href=""><i class="fa-brands fa-slack"></i></a> -->
+                </div>
+                <a href="Images/Sameer Salman Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"> </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sameer Salman <i class="fa-solid fa-file-shield"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    //defining the opentab and onclick; hiding the underline and the info of a section
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        //display the other content of each tab
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwI6ayIb_ARafp4mPBqrbRPaPVn9mkaD4r0IUWt0-_JIbVkI3CoqbLEz5TWN6ZpAifg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
